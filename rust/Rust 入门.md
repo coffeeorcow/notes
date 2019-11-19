@@ -129,6 +129,8 @@ if, else if , else , while, loop, for
 
 for x in 元祖
 
+
+
 ### 理解 OwnerShip （所有权）
 
 #### 1 所有权的规则
@@ -136,4 +138,20 @@ for x in 元祖
 - Each value in Rust has a variable that’s called its *owner*. (在 Rust 中每个值都有一个变量，这个变量被称为 owener)
 - There can only be one owner at a time. (同一时刻只能有一个 owner)
 - When the owner goes out of scope, the value will be dropped. (当 owner 脱离作用域时，其对应的值将被丢弃)
+
+> rust 的存储分为 stack 和 heap 存储，对于 heap 存储而言，赋值操作（`=`）是 `shallow copy` 浅复制，复制之后为保证内存安全，会将申明对象的所有权转移给被赋值的对象
+
+
+
+#### 2 引用和借用
+
+[Mutable References](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html#mutable-references) 可变引用
+
+[Dangling References](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html#dangling-references) 悬空引用
+
+
+
+
+
+
 
