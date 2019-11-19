@@ -123,3 +123,17 @@ rust 的基础数据类型主要分为数值型和复合型
 
 复合型包括 元组(使用小括号，定长并允许多个类型)和数组(使用中括号，定长且只能有一种类型)
 
+#### 3 流程控制
+
+if, else if , else , while, loop, for
+
+for x in 元祖
+
+### 理解 OwnerShip （所有权）
+
+#### 1 所有权的规则
+
+- Each value in Rust has a variable that’s called its *owner*. (在 Rust 中每个值都有一个变量，这个变量被称为 owener)
+- There can only be one owner at a time. (同一时刻只能有一个 owner)
+- When the owner goes out of scope, the value will be dropped. (当 owner 脱离作用域时，其对应的值将被丢弃)
+
